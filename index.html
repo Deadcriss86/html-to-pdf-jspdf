@@ -16,7 +16,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <form action="./data.php" method="post">
 </head>
 
 <body>
@@ -25,12 +24,11 @@
             <div class="col-md-8 offset-md-2 tarjeta">
                 <h3>Formulario de Discrepancias</h3>
                 <hr>
-                
-                <form id="form">
+                <form action="./data.php" method="post" id="form">
                     <div class="row mb-3">
                         <div class="col-md-6">
                             <label for="Matriculas" class="form-label">Matricula</label>
-                            <input type="text" class="form-control" name="Matriculas" id="Matriculas">
+                            <input type="text" class="form-control" name="Matriculas" id="Matriculas" required>
                         </div>
                         <div class="col-md-6">
                             <label for="Actividad" class="form-label">Actividad</label>
@@ -379,7 +377,13 @@
                         <canvas id="signature-canvas"
                             style="border: 1px dashed red; width: 100%; height: 200px;"></canvas>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-4">Generar PDF</button>
+                                <input
+                        type="submit"
+                        name="enviar"
+                        id="enviar"
+                        value="Registrarse"
+                        />
+                        <button>download</button>
                 </form>
             </div>
         </div>
