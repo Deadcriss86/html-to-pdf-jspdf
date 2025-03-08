@@ -34,9 +34,9 @@
 
 
 <?php
-//validamos datos del servidor
-$user = "id20372726_deadcriss";
-$pass = "@Pupu_2086.!";
+
+$user = "";
+$pass = "";
 $host = "localhost";
 
 //conetamos al base datos
